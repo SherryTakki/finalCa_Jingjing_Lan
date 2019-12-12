@@ -1,0 +1,9 @@
+//mongodb
+
+use finalCa_Jingjing_Lan
+
+mongoimport -d finalCa_Jingjing_Lan -c hourly_dublin --type csv --headerline --file E:\year3\sem1\datasystem\ca2\BDSDA2FPData\hourly_dublin.csv
+
+mongoimport -d finalCa_Jingjing_Lan -c JLHome1718Power --type csv --headerline --file E:\year3\sem1\datasystem\ca2\BDSDA2FPData\JLHome1718Power.csv
+
+mongoimport -d finalCa_Jingjing_Lan -c JLHome1718Temperature --type csv --headerline --file E:\year3\sem1\datasystem\ca2\BDSDA2FPData\JLHome1718Temperature.csv
