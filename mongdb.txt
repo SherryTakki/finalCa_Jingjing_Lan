@@ -33,26 +33,6 @@ db.hourly_dublin.find().forEach(
     });	
 	
 
-
-//change time front
-db.JLHome1718Temperature.find().forEach(
-    function(time){
-        time.date = new Date(time.date);
-        db.JLHome1718Temperature.save(time)
-    });
-	
-db.JLHome1718Power.find().forEach(
-    function(time){
-        time.date = new Date(time.date);
-        db.JLHome1718Power.save(time)
-    });
-
-db.hourly_dublin.find().forEach(
-    function(time){
-        time.date = new Date(time.date);
-        db.hourly_dublin.save(time)
-    });
-
 //ensureIndex the date
 //Temperature
 db.JLHome1718Temperature.ensureIndex({'date':1})
